@@ -17,7 +17,7 @@ services:
       - db
 
   node:
-    command: sh -c "yarn install && yarn start"
+    command: sh -c "npm install && npm start"
     build: ./frontend
     volumes:
       - ./frontend:/usr/src/app
